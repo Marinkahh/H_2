@@ -9,6 +9,10 @@
 Console.Clear();
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
+if(number<0)
+{
+    number = number*-1;
+}
 if(number<100)
 {
     Console.WriteLine("Нет третьего числа");
